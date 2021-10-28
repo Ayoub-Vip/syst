@@ -29,18 +29,18 @@ r = 10
 sol = si(lambda t, y: syst(t, y, sigma, r, beta), temps, C0, rtol=10**-9, atol=10**-9)
 
 plt.figure()
-plt.plot(sol.y[0,:],sol.y[1,:], color='#A23BEC');
+plt.plot(sol.y[0,:],sol.y[1,:]);
 plt.xlabel('$X$')
 plt.ylabel('$Y$')
 
 plt.figure()
-plt.plot(sol.y[0,:],sol.y[2,:], color='#A23BEC');
+plt.plot(sol.y[0,:],sol.y[2,:]);
 plt.xlabel('$X$')
 plt.ylabel('$Z$')
 
 
 
 plt.figure()
-plt.plot(sol.y[1,:],sol.y[2,:], color='#A23BEC');
+plt.plot(sol.y[1,:],sol.y[2,:]);
 plt.xlabel('$Y$')
 plt.ylabel('$Z$')
